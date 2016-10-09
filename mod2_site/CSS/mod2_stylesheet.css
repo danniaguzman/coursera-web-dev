@@ -1,0 +1,164 @@
+/********** Base styles **********/
+	* {
+		box-sizing: border-box;
+		margin:0;
+		padding:0;
+		font-family: arial, verdana, Sans-serif;
+		font-size: 32 px; /* 1em = 16px */
+	}
+	
+	h1 {
+	    font-size: 1.75em;
+	    font-weight: bold;
+	    text-align: center;
+	    
+	    margin-top: 25px; 
+	    margin-bottom: 25px;
+	
+	}
+	
+	.container{
+	
+	    /*background-color: blue;*/  
+	    width:100%;
+	    padding: 0px 10px 0px 10px;
+	    
+	
+	
+	}
+	
+	.shell1 {
+	    /*background: green;*/	
+	        
+	}
+	
+	.shell2 {
+	    /*background: orange;*/	
+	        
+	}
+	
+	.shell3 {
+	   /*background: white;*/
+	       	
+	}
+	
+ 
+    .box { 
+        background-color: #b3cccc;
+        border: 2px solid black;
+        padding: 10px;
+             
+        float: left;
+        position: relative;      
+     } 
+        
+    .box_type {
+        color: white; 
+        font-weight: bold; 
+        font-size: 1.25em;
+        border-bottom: 2px solid black;
+        border-left: 2px solid black;
+        padding: 5px;
+        margin: 0px; 
+        width: 33.33%;
+        
+        text-align: center; 
+        
+        position:relative;
+        float:right;
+        top: -10px;
+        right:-10px;        
+    }
+    
+    
+    .box_type_1{
+        background-color: #926C83; 
+    }
+    
+    .box_type_2{
+        background-color: #7B3432 ;
+        
+    }
+    
+    .box_type_3{
+        background-color: #AF484B;
+    }
+    
+    p{
+        clear: both;
+    }
+    
+    
+    /*** Desktop screen ***/
+    @media (min-width: 992px){
+    
+        .shell {
+	        width:33.33%;
+
+	        float:left;
+	
+	    }
+	
+	    .shell1 {
+	        /**background: green;**/	
+	        padding: 0px 10px 0px 10px;
+	    }
+	
+	    .shell2 {
+	        /**background: orange;**/
+	        padding: 0px 10px 0px 10px;
+	    }
+	
+	    .shell3 {
+	        /**background: white;**/
+	        padding: 0px 10px 0px 10px;	
+	    }
+    
+        
+    
+    
+    }
+    
+    /*** Tablet screen ***/
+     @media (min-width: 768px) and (max-width: 991px){
+    
+        .shell {
+	        float:left;	
+	    }
+	
+	    .shell1 {
+	        width: 50%;  
+	        padding: 0px 10px 0px 10px;
+	    }
+	
+	    .shell2 {
+	        width: 50%;
+	        padding: 0px 10px 0px 10px;
+	    }
+	    
+	    .shell3 {
+	        width: 100%;
+	        padding: 20px 10px 0px 10px;	
+	    }
+	    
+	    
+	    .box_type_3 {
+      
+        width: 16.16%;
+               
+        }
+      
+    }
+    
+    /*** Mobile screen ***/
+    @media (max-width: 767px){
+    
+        .shell {
+            width:100%;
+            float:left;      
+	        padding: 0px 10px 20px 10px;
+	    }	
+	    
+       
+    }
+    
